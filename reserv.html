@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <link rel="stylesheet" href="acceuil.css">
+    <style>
+        body{
+            background-color: black;
+        }
+       
+        .reserv{
+            background-color: white;
+            height: 1000px;
+            width: 800px;
+            margin-left: 20%;
+            margin-top: 5%;
+            margin-bottom: 4%;
+           padding-left: 40px;
+           font-size: 17px;
+        }
+        .title1{
+            
+            font-size: 21px;
+            color:rgb(28, 84, 158) ;
+            padding-left: 180px;
+        }
+   
+         input{
+        height: 43px;
+        width: 100%;
+        padding-left: 20px;
+        border-radius: 25px;
+        outline: none;
+        font-size: 17px;
+        border: 1px solid lightgrey;
+        transition: all 0.3 ease;
+        margin-top: 25px;
+    }
+
+     
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+             <a href="index.html"> <spam> Agency </spam> Travel</a>
+        </div>
+        <ul class="menu">
+                <li><a href="index.html">Acceuil</a> </li>
+                <li><a href="destination.html">Destination</a> </li>
+                <li><a href="contact.html ">Contact</a> </li>
+        </ul>
+        <button  onclick="show1_pup()" class="btn-reservation">CONNEXION</button>
+        <div class="card" id="pup1">
+           <button class="btn-clouse" onclick="hide1_pup()"> X</button>
+           <h2 class="logground">Inscription</h2> 
+
+            <h5 style="font-size: 18px;  color:  #5a5f5f;"> Pour etre a jour et decouvre les meilleur offres </h5>
+       
+         <form action="connexion.php" method="post">
+            <input type="mail" name="mail" placeholder="MAIL" class></br>
+            <input type="password" name="password" placeholder="MOT DE PASSE"></br></br>
+            <a href="inscription.html" style="font-size: 15px;color: #4194bb; text-align: center;"> pas un membre , s'inscrire maintenant .</a></br>
+            <input type="submit" name="connexion" style="background-color:#4194bb ;color: aliceblue;">
+        </form>
+    </div>
+        </div>
+       <a href="reserv.html" class="btn-reservation">Réserver Maintenant</a>
+        <div class="responsive-menu"></div>
+    </header>
+    <table class="reserv">
+        <tr>
+            <td class="title1" colspan="2"><h4> Details de vol :</h4></td>
+        </tr>
+        <form action="reserv.php" method="POST">
+        <tr>
+            <td  colspan="2">
+               Trajet :</br>
+                <select   style="height: 25px; width: 200px;">
+                    <option>Aller-simple</option>
+                    <option>Aller-retour</option>
+                   
+                  </optgroup>
+                  </select> 
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label >Aereport de depart* </label>
+            </br></br>
+            <input type="text"  placeholder="Aereport de depart*" style="height: 25px; width: 200px;">
+            </td>
+        
+            <td > 
+                <label >Aireport de destination* </label>
+            </br></br>
+              <input type="text"   placeholder="Aereport de destination*"  style="height: 25px; width: 200px;">
+            </td>
+        </tr>
+    </br>
+        <tr>
+            <td >
+                <label>Date de depart*</label>
+        </br></br>
+          <input type="date"    style="height: 25px; width: 200px;">
+        </td>
+            <td >
+                <label>Date de retour*</label>
+        </br></br>
+          <input type="date"  style="height: 25px; width: 200px;">
+        </td>
+        </tr>
+        <tr>
+            <td>
+                Classe
+            </br></br>
+          <select  style="height: 25px; width: 200px;">
+          <option>Economique</option>
+          <option>Touriste</option>
+          <option>1er classe</option>
+        </optgroup>
+        </select> 
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="title1"> <h4> CorDonnees :</h4></td>
+                   
+          </tr>
+          <tr>
+            <td> <label >Nom* </label>
+            </br></br>
+             <input type="text"  placeholder="Nom*"  style="height: 25px; width: 200px;">
+            </td>
+            <td> <label >Prenom* </label>
+            </br></br>
+             <input type="text"  placeholder="Prenom*"  style="height: 25px; width: 200px;">
+             </td>
+          </tr>
+          <tr>
+            <td><label >Telephon* </label>
+            </br></br>
+             <input type="text" placeholder="telephon*"  style="height: 25px; width: 200px;"> 
+            </td>
+            <td> <label >E-mail* </label>
+            </br></br>
+            <input type="email"  placeholder="e-mail*"  style="height: 25px; width: 200px;">
+        </td>
+          </tr>
+        </br> </br>
+          <tr>
+          <td colspan="5"> 
+            <input type="submit"  value=" Envoyez votre demande" class="envoi-demande">
+           </br> </br>
+           </td>
+        </tr>
+    </form>
+    </table>
+    <footer>
+        <table class="table-f" >
+        <tr>
+         <td> <p> Réalisé par <span><b>Manar Dev</b></span> | Tous les droits sont réservés.</p></td>
+         <td class="td1">
+             <h4 >Suivez-nous </h4>
+                            <ul>
+                                <a href="#">  <img src="images/fb1.png" alt=""> </a>
+                                <a href="#">  <img src="images/twitter1.png" alt=""></a>
+                                <a href="#"> <img src="images/telegram.png" alt=""> </a>
+                                <a href="#"> <img src="images/instagram.png" alt=""> </a>
+                                 
+                             </ul>
+  
+         </td>
+        </tr>
+       
+        </table>
+            
+     </footer>
+</body>
+<script src="codejava.js" ></script>
+</html>

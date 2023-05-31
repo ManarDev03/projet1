@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="acceuil.css">
+    <style>
+        input{
+       height: 43px;
+       width: 100%;
+       padding-left: 20px;
+       border-radius: 25px;
+       outline: none;
+       font-size: 17px;
+       border: 1px solid lightgrey;
+       transition: all 0.3 ease;
+       margin-top: 25px;
+   }
+   </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+             <a href="index.html"> <spam> Agency </spam> Travel</a>
+        </div>
+        <ul class="menu">
+                <li><a href="index.html">Acceuil</a> </li>
+                <li><a href="destination.html">Destination</a> </li>
+                <li><a href="contact.html">Contact</a> </li>
+        </ul>
+        <button  onclick="show1_pup()" class="btn-reservation">CONNEXION</button>
+        <div class="card" id="pup1">
+            <button class="btn-clouse" onclick="hide1_pup()"> X</button>
+            <h2 class="logground">Inscription</h2> 
+
+            <h5 style="font-size: 18px;  color:  #5a5f5f;"> Pour etre a jour et decouvre les meilleur offres </h5>
+       
+            <form action="connexion.php" method="post">
+            <input type="mail" name="mail" placeholder="MAIL" class></br>
+            <input type="password" name="password" placeholder="MOT DE PASSE"></br></br>
+            <a href="inscription.html" style="font-size: 15px;color: #4194bb; text-align: center;"> pas un membre , s'inscrire maintenant .</a></br>
+            <input type="submit" name="connexion" style="background-color:#4194bb ;color: aliceblue;">
+        </form>
+    </div>
+         </div>
+        <a href="reserv.html" class="btn-reservation">Réserver Maintenant</a>
+        <div class="responsive-menu"></div>
+    </header>
+</br> </br></br> </br> </br>
+
+<section id="popular-destination">
+    <h3 class="title">Destinations Populaires</h3>
+ 
+    <div class="content">
+       
+        <div class="box">
+            <img src="images/paris.jpg" alt="">
+            <div class="content">
+                    <h4>Paris</h4>
+                    <a href="https://www.officiel-des-vacances.com/proche-paris?esl-k=sem-google|ng|c604160575811|mb|kvoyage%20paris|p|t|dc|a143015012812|g17497681096&gad=1&gclid=EAIaIQobChMIxLjrxMbF_gIVGLnVCh0nAQ-jEAAYAiAAEgKyUPD_BwE" class="link">Lire Plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/moscou.jpg" alt="">
+            <div class="content">
+                    <h4>Moscou</h4>
+                    <a href="https://www.kayak.fr/Moscou-Hotels.14713.hotel.ksp?gclid=EAIaIQobChMIjduYlcfF_gIVD_NRCh3iXgRDEAAYAiAAEgI1VvD_BwE&aid=146362611088"class="link">Lire Plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/miami.jpg" alt="">
+            <div class="content">
+                    <h4>Miami</h4>
+                    <a href="https://www.booking.com/city/us/miami.fr.html?aid=301664;label=miami-goo68iTVH2NFWrCaZRvgdAS252391012521:pl:ta:p1300:p2:ac:ap:neg:fi:tiaud-297601666995:kwd-633113104:lp9067640:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs;ws=&gclid=EAIaIQobChMIt9-IrsfF_gIVSrDtCh3mIQtKEAAYASAAEgJZo_D_BwE" class="link">Lire Plus</a>
+            </div>
+        </div>
+         <div class="box">
+            <img src="images/los-angeles.jpg" alt="">
+            <div class="content">
+                    <h4>Los-Angeles</h4>
+                    <a href="https://www.booking.com/city/us/los-angeles.fr.html?aid=301664;label=los-angeles-2wqvU4iSxweWKLpVqw5HIwS294457842617:pl:ta:p1880:p2:ac:ap:neg:fi:tiaud-297601666995:kwd-1603967614:lp9067640:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs;ws=&gclid=EAIaIQobChMIysrBxsfF_gIVCJntCh1YtwQYEAAYASAAEgL2e_D_BwE"class="link">Lire Plus</a>
+            </div>
+        </div>
+         <div class="box">
+            <img src="images/rome.jpg" alt="">
+            <div class="content">
+                    <h4>Rome</h4>
+                    <a href="https://www.booking.com/city/it/rome.fr.html?aid=301664;label=rome-E5XZXF2PRTFXrm22bVOHYQS247138132981:pl:ta:p18250:p2:ac:ap:neg:fi:tiaud-146342138710:kwd-15728480:lp9067640:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs;ws=&gclid=EAIaIQobChMIhKHQ48fF_gIVwYBQBh2MtwVuEAAYASAAEgL4-vD_BwE" class="link">Lire Plus</a>
+            </div>
+        </div>
+         <div class="box">
+            <img src="images/tokio.jpg" alt="">
+            <div class="content">
+                    <h4>Tokio</h4>
+                    <a href="https://www.booking.com/city/jp/tokyo.fr.html?aid=301664;label=jp-tokyo-hkK6igSZdGkad8nZhyb4DgS247144830688:pl:ta:p1780:p2:ac:ap:neg:fi:tiaud-1110454565707:kwd-102143455:lp9067640:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs;ws=&gclid=EAIaIQobChMI4LL68cfF_gIVSeDtCh3Z6A9IEAAYASAAEgJur_D_BwE"class="link">Lire Plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/Croatia.jfif" alt="">
+            <div class="content">
+                    <h4>Croatia</h4>
+                    <a href="https://www.booking.com/searchresults.fr.html?aid=311089&label=hotel-21316-hr-WPvQhxG_b0Wha7AyHyubvQS267226355477%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-1110454565707%3Akwd-93165705%3Alp9067640%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf23yREhrOV9DIzdQnby_R8&sid=a0646fe0183e55a3646e7233f1ef9f61&city=-77079&expand_sb=1&highlighted_hotels=21316&hlrd=no_dates&keep_landing=1&redirected=1&source=hotel&gclid=EAIaIQobChMIoOK8nsjF_gIVhuDtCh346QbbEAAYASAAEgKhKfD_BwE&room1=A,A,;"class="link">Lire Plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/dubai1.jfif" alt="">
+            <div class="content">
+                    <h4>dubai</h4>
+                    <a href="https://www.booking.com/city/ae/dubai.fr.html?aid=301664;label=dubai-0tUldMlE35XS2DMMyNsquwS247141293262:pl:ta:p1920:p2:ac:ap:neg:fi:tiaud-1110454565747:kwd-140418159:lp9067640:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs;ws=&gclid=EAIaIQobChMI3Z2CvMjF_gIVOYBQBh1a0wL0EAAYASAAEgKJHfD_BwE"class="link">Lire Plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/istanbul1.png" alt="">
+            <div class="content">
+                    <h4>istanbul</h4>
+                    <a href="https://www.booking.com/city/tr/istanbul.fr.html?aid=301664;label=istanbul-Yk87QkX0S0FAS67gyVskjwS382925102113:pl:ta:p1:p2:ac:ap:neg:fi:tiaud-146342138710:kwd-23456400:lp9067640:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs;ws=&gclid=EAIaIQobChMI_cuq98jF_gIVkevtCh1PXgA9EAAYAiAAEgKUGPD_BwE"class="link">Lire Plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/Bali, Indonesia.jfif" alt="">
+            <div class="content">
+                    <h4>Bali-Indonesia</h4>
+                    <a href="#"class="link">Lire Plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/Myanmar.jfif" alt="">
+            <div class="content">
+                    <h4>Myanmar</h4>
+                    <a href="#"class="link">Lire Plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/the Bahamas.jfif" alt="">
+            <div class="content">
+                    <h4>Bahamas</h4>
+                    <a href="#"class="link">Lire Plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/maldives2.jpg" alt="">
+            <div class="content">
+                    <h4>maldives</h4>
+                    <a href="#"class="link">Lire Plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/kabile.jpg" alt="">
+            <div class="content">
+                    <h4>Kabile</h4>
+                    <a href="#"class="link">Lire Plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/tassili.jpg" alt="">
+            <div class="content">
+                    <h4>Tassili</h4>
+                    <a href="#"class="link">Lire Plus</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <table class="table-f">
+    <tr>
+     <td> <p> Réalisé par <span>Manar Dev</span> | Tous les droits sont réservés.</p></td>
+     <td class="td1">
+         <h4 >Suivez-nous </h4>
+                        <ul>
+                           <a href="#">  <img src="images/fb1.png" alt=""> </a>
+                             <a href="#">  <img src="images/twitter1.png" alt=""></a>
+                             <a href="#"> <img src="images/telegram.png" alt=""> </a>
+                             <a href="#"> <img src="images/instagram.png" alt=""> </a>
+                            
+                         </ul>
+
+     </td>
+    </tr>
+    </table>
+ </footer>
+</body>
+<script src="codejava.js" ></script>
+</html>
